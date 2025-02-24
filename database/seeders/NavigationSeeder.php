@@ -5,6 +5,9 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Navigation;
+use Spatie\Permission\Models\Role;
+use Spatie\Permission\Models\Permission;
+use Illuminate\Support\Facades\DB;
 
 class NavigationSeeder extends Seeder
 {
@@ -97,6 +100,9 @@ class NavigationSeeder extends Seeder
             'icon'      => 'bi bi-circle',
             'main_menu'     => 1,
         ]);
+
+
+        
 
     }
 }
